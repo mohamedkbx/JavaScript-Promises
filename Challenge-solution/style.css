@@ -1,0 +1,60 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  column-gap: 2rem;
+  height: 100vh;
+  padding: 2rem;
+}
+.users {
+  text-align: center;
+  background-color: #e85c0d;
+}
+.user-id {
+  width: 80%;
+  padding: 1rem;
+  background-color: white;
+  margin: 1rem auto;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.user-id h3 {
+  font-size: 1rem;
+}
+
+.user-id:hover {
+  background-color: #000;
+  color: white;
+}
+
+.posts {
+  background-color: #686d76;
+}
+
+.post {
+  width: 90%;
+  padding: 1rem;
+  background-color: #eeeeee;
+  margin: 1rem auto;
+  border-radius: 10px;
+}
+
+.selected {
+  border: 4px solid black;
+}
+
+hr {
+  margin: 0.5rem 0;
+}
+
+::selection {
+  background-color: #e85c0d;
+  color: white;
+}
